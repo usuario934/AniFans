@@ -1327,7 +1327,7 @@ input::placeholder {
 .folder-intro {
     justify-content: center;
     align-items: start;
-    background: linear-gradient(to top, var(--bg-body), transparent), url('../img/fundo.png') no-repeat ;
+    background: linear-gradient(to top, var(--bg-body), transparent), url('/img/fundo.png') no-repeat ;
     background-size: center;
 }
 
@@ -1526,11 +1526,11 @@ input::placeholder {
 }
 
 .like {
-    background: url("/img/icons/like.png") no-repeat;
+    background: url("/img-content/like.png") no-repeat;
 }
 
 .dislike {
-    background: url("/img/icons/dislike.png") no-repeat;
+    background: url("/img-content/dislike.png") no-repeat;
 }
 
 .like, .dislike {
