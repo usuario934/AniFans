@@ -1327,7 +1327,7 @@ input::placeholder {
 .folder-intro {
     justify-content: center;
     align-items: start;
-    background: linear-gradient(to top, var(--bg-body), transparent), url('img/fundo-1.png') no-repeat ;
+    background: linear-gradient(to top, var(--bg-body), transparent), url('img/capa-folder-content.png') no-repeat ;
     background-size: center;
 }
 
