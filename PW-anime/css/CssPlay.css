@@ -1,0 +1,217 @@
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                            CONTEUDO DE fORMATAÇÃO DA TELA PLAY
+
+/ --------------------------------------------------------------------------------------------*/
+
+.separador {
+    width: 100%;
+    height: 80px;
+    background-color: var(--bg-bory);
+}
+
+.container-menu {
+    flex: 1 1 320px;
+    flex-direction: column;
+    color: var(--color-6);
+    background-color: var(--bg-principal);
+}
+
+.container-video {
+    width: 100%;
+    flex-direction: column;
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                            CONTEUDO DE fORMATAÇÃO DO VIDEO
+
+/ --------------------------------------------------------------------------------------------*/
+
+video {
+    width: 100%;
+}
+
+.type-play-video {
+    width: 100%;
+    gap: 2px;
+}
+
+.option-play {
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    color: var(--color-5);
+    background-color: var(--bg-content);
+}
+
+.option-play:hover {
+    color: var(--color-3);
+    background-color: var(--bg-secundary);
+    border-bottom: 2px solid var(--color-1);
+    cursor: pointer;
+}
+
+#container-info-video {
+    padding: 25px 32px;
+    color: var(--color-3);
+    gap: 12px;
+}
+
+.title-obra {
+    color: var(--color-1);
+    font-size: 1.5em;
+}
+
+.temporada,
+.episodio,
+#container-next-content a span {
+    color: var(--color-1);
+}
+
+.sinopse {
+    color: var(--color-5);
+    text-align: justify;
+}
+
+#container-next-content {
+    padding: 5px 32px;
+    align-items: center;
+    gap: 10px;
+}
+
+#container-next-content img {
+    width: 18%;
+}
+
+#container-next-content a {
+    color: var(--color-3);
+}
+
+.date-time {
+    color: var(--color-6);
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+        CONTEUDO DE fORMATAÇÃO DOS COMENTARIOS
+
+/ --------------------------------------------------------------------------------------------*/
+
+.title-container {
+    padding: 10px;
+    font-size: 25px;
+    color: var(--color-6);
+    border-bottom: 2px solid var(--color-5);
+    margin-bottom: 10px;
+}
+
+#container-field-comment {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.comment {
+    border-left: 2px solid #fff;
+    padding: 10px;
+    margin: 20px 0px;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.comment-header {
+    align-items: center;
+    gap: 10px;
+}
+
+.comment-perfil {
+    min-width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--color-3);
+    justify-content: center;
+    overflow: hidden;
+}
+
+.comment-perfil img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.comment-user {
+    color: var(--color-4);
+    font-size: 14px;
+}
+
+.comment-text {
+    color: var(--color-4);
+    margin-left: 50px;
+}
+
+.comment-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.comment-icon img  {
+    width: 100%;
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        FORMATAÇÃO DE RESPONSIVIDADE
+
+/ --------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 575px) { /*  ---------------------------------------------------------------------------*/
+
+    .container-menu {
+        display: none;
+    }
+
+    .container-video .g-medio {
+        flex-direction: column;
+    }
+
+    #container-next-content {
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    #container-next-content img {
+        width: 100px;
+    }
+
+}
+
+@media screen and (min-width: 576px) { /*  ---------------------------------------------------------------------------*/
+
+    .container-menu {
+        display: none;
+    }
+
+    #container-next-content img {
+        width: 20%;
+    }
+
+}
+
+@media screen and (min-width: 768px) { /*  ---------------------------------------------------------------------------*/
+
+    .container-menu {
+        display: flex;
+    }
+
+}
+
+@media screen and (min-width: 992px) { /*  ---------------------------------------------------------------------------*/
+    
+    
+
+}

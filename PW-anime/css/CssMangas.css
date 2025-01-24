@@ -1,0 +1,132 @@
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        FORMATAÇÃO INTRO
+
+/ --------------------------------------------------------------------------------------------*/
+
+.img_fundo_intro,
+.img-folder,
+.img-decor {
+    width: 100%;
+}
+
+.img_fundo_intro {
+    height: 80vh;
+}
+
+.img-folder {
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-decor {
+    bottom: 0;
+    left: 0;
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                            CONTEUDO DE fORMATAÇÃO DA TELA MANGÁ
+
+/ --------------------------------------------------------------------------------------------*/
+
+.container-menu {
+    flex: 1 1 320px;
+    color: var(--color-6);
+    background-color: var(--bg-content);
+}
+
+.container-itens {
+    width: 100%;
+    flex-direction: column;
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        FORMATAÇÃO DE RESPONSIVIDADE
+
+/ --------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 575px) { /*  ---------------------------------------------------------------------------*/
+
+    .container-menu {
+        display: none;
+    }
+
+    /*---- CARD ----*/
+
+    .cards[data-type='manga'] {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container[data-type='content-manga'] {
+        gap: 20px;
+    }
+
+    .container[data-type='content-manga'] li {
+        flex: 1 1 190px;
+    }
+    
+}
+
+@media screen and (min-width: 576px) { /*  ---------------------------------------------------------------------------*/
+
+    .container-menu {
+        display: flex;
+    }
+
+    /*---- CARD ----*/
+
+    .cards[data-type='manga'] {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container[data-type='content-manga'] {
+        gap: 15px;
+    }
+
+    .container[data-type='content-manga'] li {
+        flex: 1 1 190px;
+    }
+
+}
+
+@media screen and (min-width: 768px) { /*  ---------------------------------------------------------------------------*/
+
+    /*---- CARD ----*/
+
+    .cards[data-type='manga'] {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container[data-type='content-manga'] {
+        gap: 10px;
+    }
+
+    .container[data-type='content-manga'] li {
+        flex: 1 1 200px;
+    }
+    
+}
+
+@media screen and (min-width: 992px) { /*  ---------------------------------------------------------------------------*/
+
+    /*---- CARD ----*/
+
+    .cards[data-type='manga'] {
+        flex-direction: row;
+        align-items: normal;
+    }
+    
+    .container[data-type='content-manga'] li {
+        flex: 1 0 350px;
+        border: none;
+    }
+    
+}

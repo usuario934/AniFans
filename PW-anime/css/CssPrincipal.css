@@ -1,0 +1,216 @@
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        FORMATAÇÃO INTRO
+
+/ --------------------------------------------------------------------------------------------*/
+
+#content-intro {
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#content-intro div {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--color-4);
+    padding: 40px;
+}
+
+#content-intro div h1 {
+    display: inline-block;
+    border-bottom: 2px solid var(--color-1);
+    margin-bottom: 15px;
+    color: var(--color-1);
+}
+
+#list-content-intro {
+    animation: animateCardsIntro 2s;
+}
+
+@keyframes animateCardsIntro {
+    from {
+        margin-left: -100px;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        FORMATAÇÃO CARDS INTRO
+
+/ --------------------------------------------------------------------------------------------*/
+
+
+.box-img {
+    width: 10rem;
+    height: 34rem;
+    transform: skew(15deg);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    margin: 0;
+    opacity: 0.7;
+}
+
+.box-img img {
+    width: 30em;
+    transform: skew(-15deg);
+    transition: all .4s ease-in-out;
+}
+
+.box-img:hover {
+    width: 18rem;
+    opacity: 1;
+}
+
+:is(ul:hover) .box-img:not(:hover) > img {
+    filter: blur(8px) grayscale(1);
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        CONTEUDO DE fORMATAÇÃO DO CARD PREVIEW 
+
+/ --------------------------------------------------------------------------------------------*/
+
+#recomendados {
+    padding: 0;
+    background-color: var(--color-4);
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        CONTEUDO DE fORMATAÇÃO DO ICON CATEGORIA
+
+/ --------------------------------------------------------------------------------------------*/
+
+.icon-category {
+    flex-direction: row;
+    margin: 0px 15px 0px 0px;
+    width: 40px;
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        FORMATAÇÃO DE RESPONSIVIDADE
+
+/ --------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 575px) { /*  ---------------------------------------------------------------------------*/
+
+    .icon_type {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    #content-intro ul {
+        display: none;
+    }
+
+    #content-intro div {
+        padding: 80px;
+    }
+
+    #content-intro div h1 {
+        font-size: 24px;
+    }
+
+    /*---- CARDS EVENTS ----*/
+
+    .cards[data-type='events'] {
+        width: 180px;
+    }
+
+
+    /*---- CARDS ----*/
+
+    .cards[data-type='anime'] {
+        max-width: 135px;
+    }
+
+    .cards[data-type='anime'] .detail-card{
+        display: block;
+    }
+
+
+}
+
+@media screen and (min-width: 576px) { /*  ---------------------------------------------------------------------------*/
+
+    #content-intro ul {
+        display: none;
+    }
+
+    #content-intro div {
+        padding: 80px;
+    }
+
+    /*---- CARDS EVENTS ----*/
+
+    .cards[data-type='events'] {
+        width: 200px;
+    }
+
+    /*---- CARDS ----*/
+
+    .cards[data-type='anime'] {
+        max-width: 135px;
+    }
+
+    .cards[data-type='anime'] .detail-card{
+        display: block;
+    }
+
+}
+
+@media (min-width: 768px) { /*  ---------------------------------------------------------------------------*/
+
+    #content-intro ul {
+        display: none;
+    }
+
+    /*---- CARDS EVENTS ----*/
+
+    .cards[data-type='events'] {
+        width: 260px;
+    }
+
+    /*---- CARDS ----*/
+
+    .cards[data-type='anime'] {
+        max-width: 296px;
+    }
+
+    .cards[data-type='anime'] .detail-card{
+        display: none;
+    }
+
+}
+
+@media (min-width: 992px) { /*  ---------------------------------------------------------------------------*/
+
+    #content-intro ul {
+        display: flex;
+    }
+
+    /*---- CARDS EVENTS ----*/
+
+    .cards[data-type='events'] {
+        width: 330px;
+    }
+
+
+}

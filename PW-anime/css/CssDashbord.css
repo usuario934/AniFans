@@ -1,0 +1,229 @@
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        CONTEUDO DE fORMATAÇÃO DA TELA DASHBOARD
+
+/ --------------------------------------------------------------------------------------------*/
+
+/* #navbar-dash {
+    padding: 0;
+    margin: 0;
+    width: 165px;
+    height: 100%;
+    background-color: #292C31;
+}
+
+#navbar-dash #logo {
+    padding-bottom: 6px;
+}
+
+#container-dados-dash, #section_dash {
+    width: 100%;
+}
+
+#section_dash section {
+    padding: 0px 10px;
+}
+
+#navbar-dash li a {
+    padding: 8px 0px;
+    align-items: center;
+}
+
+#navbar-dash li a img {
+    width: 22px;
+    margin-left: 5px;
+}
+
+#navbar-dash li a span {
+    margin-left: 10px;
+}
+
+#navbar-dash li a:hover {
+    border-right: 5px solid #EB7910;
+    border-bottom: none;
+    color: #EB7910;
+    opacity: 1;
+}
+
+#tools {
+    height: 50px;
+    align-items: center;
+    justify-content: end;
+}
+
+#tools ul {
+    align-items: center;
+}
+
+#tools li a {
+    margin-right: 10px;
+}
+
+#tarefas {
+    padding: 18px 10px;
+    border-bottom: 2px solid #777;
+    border-top: 2px solid #777;
+    flex-wrap: wrap;
+}
+
+.perfil {
+    width: 30px;
+    height: 30px;
+    background: url("/img/test_perfil.png") no-repeat;
+    background-position: 50% 50%;
+    background-size: 180%;
+    border-radius: 15px;
+    text-indent: -99999px;
+    margin-right: 10px;
+}
+
+.container-tarefas {
+    width: 280px;
+    height: 100%;
+    background-color: #3F3F3F;
+    margin-left: 8px;
+    margin-bottom: 5px;
+    padding: 6px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px #000;
+    transition: all 0.3s;
+}
+
+.title-tarefas {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.sts {
+    color: #7D7D7D;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.sts span {
+    color: #D0C02D;
+}
+
+.time {
+    color: #777;
+    font-size: 11px;
+} */
+
+/* -----------CARDS EVENTOS --------------- */
+
+/* #events-field {
+    padding: 20px;
+}
+
+.container-cards-events {
+    width: 200px;
+    height: 100%;
+    background-color: #3F3F3F;
+    border-left: 4px solid green;
+    padding: 3px;
+    margin-right: 15px;
+    transition: all 0.3s;
+}
+
+.container-cards-events:hover, .container-tarefas:hover {
+    background-color: #4e4e4e;
+}
+
+.container-cards-events .title-events {
+    font-size: 12px;
+    color: #f19a67;
+    margin-bottom: 2px;
+}
+
+.organizers {
+    font-size: 10px;
+    color: #777;
+    margin-bottom: 10px;
+} */
+
+/* ----------- TABELA --------------- */
+
+/* .box-default {
+    width: 180px;
+    padding: 5px 5px;
+}
+
+.box-default-low {
+    padding: 5px 5px;
+    width: 65px;
+}
+
+.full-w {
+    width: 35%;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.td_thead {
+    color: #545454;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #505050;
+}
+
+.td-b {
+    align-items: center;
+    margin-top: 2px;
+}
+
+.td_tbody {
+    font-size: 12px;
+    color: #8E8E8E;
+    background-color: #393939;
+}
+
+.active {
+    color: #6FFE58;
+}
+
+.desactived {
+    color: #FE5858;
+}
+
+.arrow-dash {
+    height: 18px;
+    padding: 10px 0px;
+    background: url('/img/icons/arrow-down.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 20px;
+} */
+
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        FORMATAÇÃO DE RESPONSIVIDADE
+
+/ --------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 575px) { /*  ---------------------------------------------------------------------------*/
+
+    
+
+}
+
+@media screen and (min-width: 576px) { /*  ---------------------------------------------------------------------------*/
+
+    
+
+}
+
+@media (min-width: 768px) { /*  ---------------------------------------------------------------------------*/
+
+    
+    
+}
+
+@media (min-width: 992px) { /*  ---------------------------------------------------------------------------*/
+
+    
+
+}

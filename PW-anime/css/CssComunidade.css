@@ -1,0 +1,126 @@
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        CONTEUDO DE fORMATAÇÃO DO SLIDE
+
+/ --------------------------------------------------------------------------------------------*/
+
+.container-float {
+    position: absolute;
+    bottom: 0;
+    color: var(--color-4);
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        CONTEUDO DE fORMATAÇÃO DOS POSTS
+
+/ --------------------------------------------------------------------------------------------*/
+
+#sideRight,
+#sideLeft {
+    width: 30%;
+}
+
+#posts {
+    width: 60%;
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        CONTEUDO DE fORMATAÇÃO DO CONTAINER LATERAL
+
+/ --------------------------------------------------------------------------------------------*/
+
+.card-content-community {
+    background-color: var(--bg-content);
+    border-radius: 6px;
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        CONTEUDO DE fORMATAÇÃO DOS CARDS EVENTOS LATERAL
+
+/ --------------------------------------------------------------------------------------------*/
+
+.card-events {
+    max-height: 100px;
+    background-color: var(--bg-secundary);
+    border-radius: 5px;
+    align-items: center;
+    font-size: .8em;
+    color: var(--color-6);
+}
+
+.container-img-events {
+    width: 30%;
+}
+
+.card-events img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px 0px 0px 5px;
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        FORMATAÇÃO DE RESPONSIVIDADE
+
+/ --------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 575px) { /*  ---------------------------------------------------------------------------*/
+
+    .img-slide[data-type='info']  {
+        height: 40vh;
+    }
+
+    #sideRight,
+    #sideLeft {
+        display: none;
+    }
+
+    #posts {
+        padding: 0px 25px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 576px) { /*  ---------------------------------------------------------------------------*/
+
+    #sideRight,
+    #sideLeft {
+        display: none;
+    }
+
+    #posts {
+        padding: 0px 25px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 768px) { /*  ---------------------------------------------------------------------------*/
+
+    
+    #sideRight,
+    #sideLeft {
+        display: flex;
+    }
+
+    #posts {
+        padding: 8px 35px;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 992px) { /*  ---------------------------------------------------------------------------*/
+
+    
+
+}

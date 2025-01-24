@@ -1,0 +1,160 @@
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        FORMATAÇÃO INTRO
+
+/ --------------------------------------------------------------------------------------------*/
+
+#profile {
+    padding: 100px 20px 20px 20px;
+}
+
+.container-top-perfil {
+    width: 100%;
+    height: 380px;
+    background-color: var(--color-4);
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+
+.container-top-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#user_profile {
+    padding: 20px 40px;
+    background-color: var(--color-4);
+    border-radius: 0px 0px 10px 10px;
+}
+
+#data_profile {
+    justify-content: space-between;
+}
+
+.container-list-pages {
+    background-color: var(--color-4);
+    font-size: 1em;
+}
+
+.states-data {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.state-title {
+    color: var(--color-6);
+    font-size: 1em;
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        CONTEUDO DE fORMATAÇÃO DO CONTAINER LATERAL
+
+/ --------------------------------------------------------------------------------------------*/
+
+.card-content-community {
+    background-color: var(--bg-content);
+    border-radius: 6px;
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        CONTEUDO DE fORMATAÇÃO DOS POSTS
+
+/ --------------------------------------------------------------------------------------------*/
+
+#sideRight,
+#sideLeft {
+    width: 50%;
+}
+
+#posts {
+    width: 100%;
+}
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        FORMATAÇÃO DE RESPONSIVIDADE
+
+/ --------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 575px) { /*  ---------------------------------------------------------------------------*/
+
+    #data_profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content_profile_bottom {
+        flex-direction: column;
+    }
+
+    .img-slide[data-type='info']  {
+        height: 40vh;
+    }
+
+    #sideRight {
+        display: none;
+    }
+
+    #posts {
+        padding: 0px 25px;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width: 576px) { /*  ---------------------------------------------------------------------------*/
+
+    #data_profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content_profile_bottom {
+        flex-direction: column;
+    }
+
+    #sideRight {
+        display: none;
+    }
+
+    #posts {
+        padding: 0px 25px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 768px) { /*  ---------------------------------------------------------------------------*/
+
+    #data_profile {
+        flex-direction: row;
+    }
+
+    #content_profile_bottom {
+        flex-direction: row;
+    }
+
+    #sideRight {
+        display: flex;
+    }
+
+    #posts {
+        padding: 8px 50px;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 992px) { /*  ---------------------------------------------------------------------------*/
+
+    
+
+}

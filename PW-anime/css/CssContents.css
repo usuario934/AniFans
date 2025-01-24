@@ -1,0 +1,332 @@
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+        CONTEUDO DE fORMATAÇÃO DA TELA FOLDER
+
+/ --------------------------------------------------------------------------------------------*/
+
+#session_2 {
+    padding: 0px 60px;
+}
+
+#container-videos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 0px;
+}
+
+.folder-intro {
+    justify-content: center;
+    align-items: start;
+    background: linear-gradient(to top, var(--bg-body), transparent), url('../img/folder/capa-folder-content.png') no-repeat ;
+    background-size: center;
+}
+
+.container-introduction {
+    width: 1px;
+    padding: 20px;
+    color: var(--color-4);
+    bottom: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    gap: 30px;
+}
+
+.title-container {
+    padding: 10px;
+    font-size: 25px;
+    color: var(--color-6);
+    border-bottom: 2px solid var(--color-5);
+    margin-bottom: 10px;
+}
+
+/*----------- Formatação da SEÇÃO 1 --------------*/
+
+.img-capa {
+    width: 250px;
+    background: var(--color-3);
+    border-radius: 5px;
+}
+
+.box-info {
+    width: 58em;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-anime {
+    font-size: var(--sizeFont-slide-title);
+    font-weight: 600;
+    color: var(--color-1);
+}
+
+.container-info {
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.container-info ul {
+    width: 250px;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.container-info span {
+    color: var(--color-1);
+}
+
+.description-folder {
+    padding: 10px;
+    font-size: var(--sizeFont-slide-description);
+    overflow-x: hidden;
+    text-align: justify;
+    border-left: 2px solid var(--color-1);
+}
+
+.description-folder::-webkit-scrollbar {
+    border-radius: 10px;
+    width: 8px;
+}
+
+.description-folder::-webkit-scrollbar-thumb {
+    background-color: var(--color-3);
+    border-radius: 10px;
+    width: 8px;
+}
+
+/*----------- Formatação da SEÇÃO 2 --------------*/
+
+/* -------- CONTAINER OBRAS --------------- */
+.container-semelantes {
+    height: 300px;
+}
+
+.item-semelhante {
+    width: 180px;
+    background-color: var(--color-3);
+    scroll-snap-align: start;
+    border-radius: 5px;
+}
+
+.item-semelhante img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.item-semelhante span {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: var(--color-4);
+    font-size: 12px;
+    padding: 15px;
+    background-image: linear-gradient(to top, var(--color-2) 80%, transparent);
+    text-align: center;
+}
+
+/* -------- CONTAINER EPISODIOS --------------- */
+
+#sector_1,
+#sector_2 {
+    width: 48%;
+}
+
+#sector_1 ul li a span,
+#sector_2 ul li a span {
+    color: var(--color-1);
+}
+
+#sector_1 ul li,
+#sector_2 ul li {
+    flex-direction: column;
+    border-left: 2px solid var(--color-4);
+    padding: 6px;
+    margin: 8px 0px;
+    gap: 8px;
+}
+
+#sector_1 a, #sector_2 a:hover {
+    border: none;
+}
+
+.date-time {
+    font-size: var(--sizeFont-text);
+    color: var(--color-6);
+}
+
+/* -------- CONTAINER COMENTARIOS --------------- */
+
+#container-field-comment {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.comment {
+    border-left: 2px solid #fff;
+    padding: 10px;
+    margin: 20px 0px;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.comment-header {
+    align-items: center;
+    gap: 10px;
+}
+
+.comment-perfil {
+    min-width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--color-3);
+    justify-content: center;
+    overflow: hidden;
+}
+
+.comment-perfil img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.comment-user {
+    color: var(--color-4);
+    font-size: 14px;
+}
+
+.comment-text {
+    color: var(--color-4);
+    margin-left: 50px;
+}
+
+.comment-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.comment-icon img  {
+    width: 100%;
+}
+
+
+/* -------------------------------------------------------------------------------------------*/
+/*
+
+                                        FORMATAÇÃO DE RESPONSIVIDADE
+
+/ --------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 575px) { /*  ---------------------------------------------------------------------------*/
+
+    /*---- SAÇÃO 1 ----*/
+
+    .box-info {
+        margin-top: 20px;/*160px*/
+        width: 320px;/*980px*/
+    }
+
+    .container-info {
+        flex-direction: column;
+    }
+
+    .description-folder {
+        border: none;
+        border-top: 2px solid var(--color-1);
+    }
+
+    /* -------- CONTAINER EPISODIOS --------------- */
+    
+    #sector_1, #sector_2 {
+        width: 100%;
+    }
+
+    #session_2 {
+        padding: 0 30px;
+    }
+
+}
+
+@media screen and (min-width: 576px) { /*  ---------------------------------------------------------------------------*/
+
+    /*---- SAÇÃO 1 ----*/
+
+    .container-folder-introduction {
+        height: 780px; /*620px*/
+    }
+
+    .box-info {
+        margin-top: 20px;/*160px*/
+        width: 460px;/*980px*/
+    }
+
+    .container-info {
+        flex-direction: column;/*row*/
+    }
+
+    .container-info ul {
+        width: 100%;
+    }
+
+
+    .description-folder {
+        border: none;
+        border-top: 2px solid var(--color-1);
+    }
+
+    /* -------- CONTAINER EPISODIOS --------------- */
+
+    #sector_1, #sector_2 {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 768px) { /*  ---------------------------------------------------------------------------*/
+
+    /*---- SAÇÃO 1 ----*/
+
+
+    .box-info {
+        margin-top: 20px;
+        width: 50%;
+    }
+
+    .container-info {
+        flex-direction: column;
+    }
+
+    .container-info ul {
+        width: 250px;
+    }
+
+    .description-folder {
+        border: none;
+        border-left: 2px solid var(--color-1);
+    }
+
+
+    /* -------- CONTAINER EPISODIOS --------------- */
+
+    #sector_1, #sector_2 {
+        max-width: 45%;
+    }
+    
+}
+
+@media (min-width: 992px) { /*  ---------------------------------------------------------------------------*/
+
+    /*---- SAÇÃO 1 ----*/
+
+    .box-info {
+        margin-top: 160px;
+        width: 70%;
+    }
+
+    .container-info {
+        flex-direction: row;
+    }
+
+}
