@@ -698,7 +698,7 @@ textarea {
 }
 
 .cards[data-type='anime'] {
-    width: 296px;
+    max-width: 296px;
     box-shadow: 0px 0px 10px var(--color-default);
 }
 
