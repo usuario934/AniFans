@@ -138,13 +138,12 @@
     /*---- CARDS ----*/
 
     .cards[data-type='anime'] {
-        max-width: 135px;
+        width: 135px;
     }
 
     .cards[data-type='anime'] .detail-card{
         display: block;
     }
-
 
 }
 
@@ -167,7 +166,7 @@
     /*---- CARDS ----*/
 
     .cards[data-type='anime'] {
-        max-width: 135px;
+        width: 135px;
     }
 
     .cards[data-type='anime'] .detail-card{
@@ -191,7 +190,7 @@
     /*---- CARDS ----*/
 
     .cards[data-type='anime'] {
-        max-width: 296px;
+        width: 296px;
     }
 
     .cards[data-type='anime'] .detail-card{
