@@ -75,8 +75,12 @@
 
     /*---- CARDS ----*/
 
+    .container[data-type='content-catalogy'] li {
+        flex: 1 1 135px;
+    }
+
     .cards[data-type='anime'] {
-        max-width: 135px;
+        width: 100%;
     }
 
     .cards[data-type='anime'] .detail-card{
@@ -88,12 +92,6 @@
     .container-selection {
         width: 100%;
     }
-
-    /* .field-search {
-        width: 100%;
-        border: 1px solid blue;
-    } */
-
 }
 
 @media screen and (min-width: 576px) { /*  ---------------------------------------------------------------------------*/
@@ -110,8 +108,12 @@
 
     /*---- CARDS ----*/
 
+    .container[data-type='content-catalogy'] li {
+        flex: 1 0 135px;
+    }
+
     .cards[data-type='anime'] {
-        max-width: 135px;
+        width: 100%;
     }
 
     .cards[data-type='anime'] .detail-card{
@@ -123,13 +125,6 @@
     .container-selection {
         width: 100%;
     }
-
-    /* .field-search {
-        width: 50%;
-        border: 1px solid red;
-    } */
-
-
 }
 
 @media (min-width: 768px) { /*  ---------------------------------------------------------------------------*/
@@ -144,8 +139,12 @@
 
     /*---- CARDS ----*/
 
+    .container[data-type='content-catalogy'] li {
+        flex: 1 0 296px;
+    }
+
     .cards[data-type='anime'] {
-        max-width: 296px;
+        width: 100%;
     }
 
     .cards[data-type='anime'] .detail-card{
@@ -157,7 +156,6 @@
     .container-selection {
         width: 50%;
     }
-
 
 }
 
