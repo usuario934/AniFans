@@ -323,11 +323,13 @@ textarea {
     color: var(--color-2);
     text-decoration: none;
     font-weight: 600;
+    font-size: var(--sizeFont-text);
 }
 
 .link-disabled {
     color: var(--color-6);
     text-decoration: none;
+    font-size: var(--sizeFont-text);
 }
 
 /* -------------------------------------------------------------------------------------------*/
