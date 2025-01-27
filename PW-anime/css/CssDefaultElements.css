@@ -810,6 +810,10 @@ textarea {
         display: flex;
     }
 
+    .item-menu:hover {
+        border-bottom: none;
+    }
+
     .arrows {
         display: none;
     }
@@ -868,6 +872,10 @@ textarea {
         display: flex;
     }
 
+    .item-menu:hover {
+        border-bottom: none;
+    }
+
     .arrows {
         display: none;
     }
@@ -924,6 +932,10 @@ textarea {
 
     .list-menu[data-type='down'] {
         display: none;
+    }
+
+    .item-menu:hover {
+        border-bottom: 2px solid var(--color-1);
     }
 
     .arrows {
