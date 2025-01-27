@@ -121,13 +121,17 @@
 
     /*---- CARD ----*/
 
+    #container-forum-principal ul {
+        flex-direction: row;
+    }
+
     .cards[data-type='card-forum'] {
         flex-direction: column;
     }
 
     .cards[data-type='card-forum'] .container-img {
-        width: 100%;
-        height: 160px;
+        width: 220px;
+        height: 80px;
     }
 
     .cards[data-type='card-forum'] .container-img img {
@@ -175,12 +179,16 @@
 
     /*---- CARD ----*/
 
+    #container-forum-principal ul {
+        flex-direction: row;
+    }
+
     .cards[data-type='card-forum'] {
         flex-direction: column;
     }
 
     .cards[data-type='card-forum'] .container-img {
-        width: 100%;
+        width: 320px;
         height: 160px;
     }
 
@@ -225,6 +233,11 @@
     }
 
     /*---- CARD ----*/
+
+    #container-forum-principal ul {
+        flex-direction: column;
+        height: auto;
+    }
 
     .cards[data-type='card-forum'] {
         flex-direction: row;
