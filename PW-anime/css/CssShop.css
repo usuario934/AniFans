@@ -74,6 +74,7 @@
 
     .cards[data-type='loja'] .container-img {
         width: 100%;
+        height: 40vh;
     }
     
 }
