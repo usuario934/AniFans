@@ -673,7 +673,7 @@ function atribuirValores(list_values, ref_list, list_random) {
         list_values[i].forEach(item => {
 
             if(item.hasAttribute('src')) {
-                item.setAttribute('src', `../PW-anime/img/capas_cards/${ref_list[list_random[i]].img}`)
+                item.setAttribute('src', `PW-anime/img/capas_cards/${ref_list[list_random[i]].img}`)
             }else {
 
                 const new_array = Array.from(item.classList)
