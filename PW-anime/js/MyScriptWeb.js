@@ -915,7 +915,7 @@ function createContainerCatalogy(elem_list_card) {
         {
             type: 'img',
             attr: [
-                ['src', ['../PW-anime/img/icons/fontisto_map-6.png']],
+                ['src', ['PW-anime/img/icons/fontisto_map-6.png']],
                 ['alt', ' ']
             ],
             parent: 2,
@@ -1055,7 +1055,7 @@ function createCardsCategory(elem_list_card, list_ref) {
         {
             type: 'img',
             attr: [
-                ['src', [`../PW-anime/img/capas_cards/${elem_list_card.img}`]],
+                ['src', [`PW-anime/img/capas_cards/${elem_list_card.img}`]],
                 ['alt', ' ']
             ],
             parent: null,
