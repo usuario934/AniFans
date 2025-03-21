@@ -1039,7 +1039,7 @@ function createCardsCategory(elem_list_card, list_ref) {
         {
             type: 'a',
             attr: [
-                ['href', ['content.html']],
+                ['href', ['layouts/content.html']],
             ],
             parent: null,
             text: ''
