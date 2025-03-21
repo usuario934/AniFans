@@ -942,7 +942,7 @@ function createContainerCatalogy(elem_list_card) {
             type: 'img',
             attr: [
                 ['class', ['icon']],
-                ['src', ['../PW-anime/img/icons/grommet-icons_catalog.png']],
+                ['src', ['PW-anime/img/icons/grommet-icons_catalog.png']],
                 ['alt', 'catalog.png']
             ],
             parent: null,
