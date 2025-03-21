@@ -593,7 +593,7 @@ function recomendados(list, lb) {
 
     let [list_random, date] = [[1, 2, 3, 4, 5], new Date().getDay()]
 
-    if(date === 4) {
+    if(date === 5) {
         const random = sorteados(30)
         list_random = random
     }
@@ -925,7 +925,7 @@ function createContainerCatalogy(elem_list_card) {
         {
             type: 'a',
             attr: [
-                ['href', ['catalogo.html']]
+                ['href', ['layouts/catalogo.html']]
             ],
             parent: 1,
             text: ''
